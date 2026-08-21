@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #e8e8e8;
+  min-height: 100dvh;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+#root {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  background: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Leaflet override — keep z-index below our UI */
+.leaflet-control-container { z-index: 400 !important; }
+.leaflet-pane { z-index: 200 !important; }
+.leaflet-top, .leaflet-bottom { z-index: 400 !important; }
