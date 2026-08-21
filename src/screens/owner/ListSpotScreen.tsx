@@ -52,8 +52,6 @@ export default function ListSpotScreen() {
         slotsTotal: Number(slots),
         slotsAvailable: Number(slots),
         ownerName: 'You',
-        totalEarnings: 0,
-        totalBookings: 0,
       })
       addSpot(spot)
       setSuccess(true)
